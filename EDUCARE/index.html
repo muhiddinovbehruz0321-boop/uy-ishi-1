@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="IT ACADEMY — dasturlashni o'rganish platformasi">
+  <title>IT ACADEMY — Learn. Code. Create.</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#" data-page="dashboard">
+      <span class="brand-icon">&lt;/&gt;</span>
+      <span>IT <b>ACADEMY</b><small>LEARN · CODE · CREATE</small></span>
+    </a>
+
+    <div class="side-label">ASOSIY MENYU</div>
+    <button class="nav-link active" data-page="dashboard">▦ <span>Bosh sahifa</span></button>
+    <button class="nav-link" data-page="courses">▣ <span>Kurslar</span></button>
+    <button class="nav-link" data-page="lessons">▷ <span>Darslarim</span></button>
+    <button class="nav-link" data-page="tests">☑ <span>Testlar</span></button>
+    <button class="nav-link" data-page="tasks">▤ <span>Vazifalar</span></button>
+    <button class="nav-link" data-page="assistant">✧ <span>AI yordamchi</span></button>
+
+    <div class="sidebar-bottom">
+      <div class="mini-profile">
+        <div class="avatar">IT</div>
+        <div><b>IT o‘quvchi</b><small>O‘rganish davom etmoqda</small></div>
+      </div>
+      <button class="nav-link" id="themeToggle">◐ <span>Ko‘rinishni almashtirish</span></button>
+    </div>
+  </aside>
+
+  <main class="main">
+    <header class="topbar">
+      <button id="menuToggle" class="icon-button" aria-label="Menyuni ochish">☰</button>
+      <div class="breadcrumbs">IT ACADEMY <span>/</span> <b id="pageTitle">Bosh sahifa</b></div>
+      <div class="top-actions">
+        <span class="status-dot"></span><span class="status-text">Ta’lim platformasi</span>
+      </div>
+    </header>
+
+    <div id="content" class="content">
+      <div class="loading">IT ACADEMY yuklanmoqda...</div>
+    </div>
+
+    <footer class="footer">
+      <span>© <span id="year"></span> IT ACADEMY</span>
+      <span>Learn. Code. Create.</span>
+    </footer>
+  </main>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <div id="modalRoot"></div>
+</body>
+</html>
